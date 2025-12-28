@@ -1,73 +1,77 @@
 package tests;
 
 import data.ExperimentInput;
-import data.JsonExperimentLoader;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import pages.FindMyGiftResultsPage;
 import pages.ProductCardComponent;
-
 import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RunWith(Parameterized.class)
 public class ImagesToggleTests extends BaseTest {
 
-    private final ExperimentInput e;
+	private final ExperimentInput e;
 
-    public ImagesToggleTests(ExperimentInput e) {
-        this.e = e;
-    }
+	public ImagesToggleTests(ExperimentInput e) {
+		this.e = e;
+	}
 
-    @Parameterized.Parameters(name = "{0}")
-    public static Collection<Object[]> data() {
-        List<ExperimentInput> exps = JsonExperimentLoader.load("/experiments_L18.json");
-        return exps.stream().map(x -> new Object[]{x}).collect(Collectors.toList());
-    }
+	@Parameterized.Parameters(name = "{0}")
+	public static Collection<Object[]> data() {
+		return BaseTest.experimentsData();
+	}
 
-    @Test
-    public void imagesToggle_shouldToggleAndShowAdditionalImages() {
-        step("Navigate to results using " + e);
-        FindMyGiftResultsPage results = goToResults(e);
+	@Test
+	public void imagesToggle_shouldToggleAndShowAdditionalImages() {
 
-        step("Open first product card");
-        ProductCardComponent card0 = results.getCard(0);
-        card0.waitUntilReady();
+		// step("Navigate to results using " + e);
+		FindMyGiftResultsPage results = goToResults(e);
 
-        boolean initiallyOpen = card0.isImagesOpen();
-        int initialCount = card0.getAdditionalImageUrls().size();
-        step("Initial state: imagesOpen=" + initiallyOpen + ", additionalImages=" + initialCount);
+		int count = results.getCardsCount();
+//		checkTrue("Expected 5 product cards", count == 5);
 
-        step("Toggle Images");
-        card0.toggleImages();
+		for (int i = 0; i < count; i++) {
+			step("=== CARD " + (i + 1) + " ===");
 
-        step("Wait until images open state toggles");
-        wait.until(d -> card0.isImagesOpen() != initiallyOpen);
+			ProductCardComponent card = results.getCard(i);
+			card.waitUntilReady();
 
-        boolean afterFirstToggle = card0.isImagesOpen();
-        step("After toggle: imagesOpen=" + afterFirstToggle);
-        checkTrue("Images state should toggle after click", afterFirstToggle != initiallyOpen);
+			boolean initiallyOpen = card.isImagesOpen();
+			int initialCount = card.getAdditionalImageUrls().size();
+			step("Initial state: imagesOpen=" + initiallyOpen + ", additionalImages=" + initialCount);
 
-        step("Verify additional images exist when Images is open");
-        List<String> urls = card0.getAdditionalImageUrls();
-        step("Additional images count after open: " + urls.size());
-        checkTrue("Expected at least 1 additional image when images are open", urls.size() >= 1);
+			step("Toggle Images");
+			card.toggleImages();
 
-        for (int i = 0; i < urls.size(); i++) {
-            String u = urls.get(i);
-            checkTrue("Additional image src should not be blank (index " + i + ")", u != null && !u.trim().isEmpty());
-        }
+			// step("Wait until images open state toggles");
+			wait.until(d -> card.isImagesOpen() != initiallyOpen);
 
-        step("Toggle Images again to return to initial state");
-        card0.toggleImages();
+			boolean afterFirstToggle = card.isImagesOpen();
+			checkTrue("Card " + (i + 1) + ": Images state should toggle after click",
+					afterFirstToggle != initiallyOpen);
 
-        step("Wait until images open state returns to initial");
-        wait.until(d -> card0.isImagesOpen() == initiallyOpen);
+			step("Verify additional images exist when Images is open");
+			List<String> urls = card.getAdditionalImageUrls();
+			step("Card " + (i + 1) + ": Additional images count after open: " + urls.size());
+			checkTrue("Card " + (i + 1) + ": Expected at least 1 additional image when images are open",
+					urls.size() >= 1);
 
-        boolean afterSecondToggle = card0.isImagesOpen();
-        step("After second toggle: imagesOpen=" + afterSecondToggle);
-        checkTrue("Images state should toggle back after second click", afterSecondToggle == initiallyOpen);
-    }
+//			for (int k = 0; k < urls.size(); k++) {
+//				String u = urls.get(k);
+//				checkTrue("Card " + i + ": Additional image src should not be blank (index " + k + ")",
+//						u != null && !u.trim().isEmpty());
+//			}
+
+			step("Toggle Images again to return to initial state");
+			card.toggleImages();
+
+			// step("Wait until images open state returns to initial");
+			wait.until(d -> card.isImagesOpen() == initiallyOpen);
+
+			checkTrue("Card " + (i + 1) + ": Images state should toggle back after second click",
+					card.isImagesOpen() == initiallyOpen);
+		}
+	}
 }

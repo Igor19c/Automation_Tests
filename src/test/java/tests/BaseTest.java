@@ -10,12 +10,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import data.ExperimentInput;
+import data.JsonExperimentLoader;
 import pages.FindMyGiftResultsPage;
 import pages.GiftFormPage;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import java.time.Duration;
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public abstract class BaseTest {
 
@@ -45,6 +49,11 @@ public abstract class BaseTest {
 			driver.quit();
 	}
 
+	public static Collection<Object[]> experimentsData() {
+        List<ExperimentInput> exps = JsonExperimentLoader.load("/experiments_L18.json");
+        return exps.stream().map(x -> new Object[]{ x }).collect(Collectors.toList());
+    }
+	
 	protected FindMyGiftResultsPage goToResults(ExperimentInput e) {
 		new GiftFormPage(driver).open(baseUrl)
 				.fillAll(e.getF1(), e.getF2(), e.getF3(), e.getF4(), e.getF5(), e.getF6(), e.getF7(), e.getF8())
