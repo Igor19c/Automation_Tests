@@ -1,0 +1,300 @@
+2025-12-28 02:46:52 INFO  === START tests.ImagesToggleTests.exp1_imagesToggle_shouldToggleAndShowAdditionalImages ===
+2025-12-28 02:46:54 INFO  STEP: Navigate to results using Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]
+2025-12-28 02:47:02 INFO  STEP: Open first product card
+2025-12-28 02:47:02 INFO  STEP: Initial state: imagesOpen=false, additionalImages=0
+2025-12-28 02:47:02 INFO  STEP: Toggle Images
+2025-12-28 02:47:02 INFO  STEP: Wait until images open state toggles
+2025-12-28 02:47:02 INFO  STEP: After toggle: imagesOpen=true
+2025-12-28 02:47:02 INFO  STEP PASS: Images state should toggle after click
+2025-12-28 02:47:02 INFO  STEP: Verify additional images exist when Images is open
+2025-12-28 02:47:02 INFO  STEP: Additional images count after open: 3
+2025-12-28 02:47:02 INFO  STEP PASS: Expected at least 1 additional image when images are open
+2025-12-28 02:47:02 INFO  STEP PASS: Additional image src should not be blank (index 0)
+2025-12-28 02:47:02 INFO  STEP PASS: Additional image src should not be blank (index 1)
+2025-12-28 02:47:02 INFO  STEP PASS: Additional image src should not be blank (index 2)
+2025-12-28 02:47:02 INFO  STEP: Toggle Images again to return to initial state
+2025-12-28 02:47:02 INFO  STEP: Wait until images open state returns to initial
+2025-12-28 02:47:02 INFO  STEP: After second toggle: imagesOpen=false
+2025-12-28 02:47:02 INFO  STEP PASS: Images state should toggle back after second click
+2025-12-28 02:47:03 INFO  === PASS  tests.ImagesToggleTests.exp1_imagesToggle_shouldToggleAndShowAdditionalImages ===
+2025-12-28 02:47:03 INFO  === END   tests.ImagesToggleTests.exp1_imagesToggle_shouldToggleAndShowAdditionalImages ===
+2025-12-28 02:56:24 INFO  === START tests.ImagesToggleTests.exp1_imagesToggle_shouldToggleAndShowAdditionalImages ===
+2025-12-28 02:56:27 INFO  STEP: Navigate to results using Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]
+2025-12-28 02:56:38 INFO  STEP: Open first product card
+2025-12-28 02:56:38 INFO  STEP: Initial state: imagesOpen=false, additionalImages=0
+2025-12-28 02:56:38 INFO  STEP: Toggle Images
+2025-12-28 02:56:38 INFO  STEP: Wait until images open state toggles
+2025-12-28 02:56:39 INFO  STEP: After toggle: imagesOpen=true
+2025-12-28 02:56:39 INFO  STEP PASS: Images state should toggle after click
+2025-12-28 02:56:39 INFO  STEP: Verify additional images exist when Images is open
+2025-12-28 02:56:39 INFO  STEP: Additional images count after open: 3
+2025-12-28 02:56:39 INFO  STEP PASS: Expected at least 1 additional image when images are open
+2025-12-28 02:56:39 INFO  STEP PASS: Additional image src should not be blank (index 0)
+2025-12-28 02:56:39 INFO  STEP PASS: Additional image src should not be blank (index 1)
+2025-12-28 02:56:39 INFO  STEP PASS: Additional image src should not be blank (index 2)
+2025-12-28 02:56:39 INFO  STEP: Toggle Images again to return to initial state
+2025-12-28 02:56:39 INFO  STEP: Wait until images open state returns to initial
+2025-12-28 02:56:39 INFO  STEP: After second toggle: imagesOpen=false
+2025-12-28 02:56:39 INFO  STEP PASS: Images state should toggle back after second click
+2025-12-28 02:56:39 INFO  === PASS  tests.ImagesToggleTests.exp1_imagesToggle_shouldToggleAndShowAdditionalImages ===
+2025-12-28 02:56:39 INFO  === END   tests.ImagesToggleTests.exp1_imagesToggle_shouldToggleAndShowAdditionalImages ===
+2025-12-28 02:56:54 INFO  === START tests.ReviewsToggleTests.exp1_reviewsToggle_shouldToggleAndShowReviews ===
+2025-12-28 02:56:56 INFO  STEP: Navigate to results using Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]
+2025-12-28 02:57:01 INFO  STEP: Open first product card
+2025-12-28 02:57:01 INFO  STEP: Initial state: reviewsOpen=false, reviews=0
+2025-12-28 02:57:01 INFO  STEP: Toggle Reviews
+2025-12-28 02:57:01 INFO  STEP: Wait until reviews open state toggles
+2025-12-28 02:57:02 INFO  STEP: After toggle: reviewsOpen=true
+2025-12-28 02:57:02 INFO  STEP PASS: Reviews state should toggle after click
+2025-12-28 02:57:02 INFO  STEP: Verify reviews exist when Reviews is open
+2025-12-28 02:57:02 INFO  STEP: Reviews count after open: 4
+2025-12-28 02:57:02 INFO  STEP PASS: Expected at least 1 review when reviews are open
+2025-12-28 02:57:02 INFO  STEP: Validate each review basic fields
+2025-12-28 02:57:02 INFO  STEP PASS: Review author should not be blank (index 0)
+2025-12-28 02:57:02 INFO  STEP PASS: Review stars should be 1..5 (index 0, actual=5)
+2025-12-28 02:57:02 INFO  STEP PASS: Review text should not be blank (index 0)
+2025-12-28 02:57:02 INFO  STEP PASS: Review dateText should not be null (index 0)
+2025-12-28 02:57:02 INFO  STEP PASS: Review author should not be blank (index 1)
+2025-12-28 02:57:02 INFO  STEP PASS: Review stars should be 1..5 (index 1, actual=3)
+2025-12-28 02:57:02 INFO  STEP PASS: Review text should not be blank (index 1)
+2025-12-28 02:57:02 INFO  STEP PASS: Review dateText should not be null (index 1)
+2025-12-28 02:57:02 INFO  STEP PASS: Review author should not be blank (index 2)
+2025-12-28 02:57:02 INFO  STEP PASS: Review stars should be 1..5 (index 2, actual=3)
+2025-12-28 02:57:02 INFO  STEP PASS: Review text should not be blank (index 2)
+2025-12-28 02:57:02 INFO  STEP PASS: Review dateText should not be null (index 2)
+2025-12-28 02:57:02 INFO  STEP PASS: Review author should not be blank (index 3)
+2025-12-28 02:57:02 INFO  STEP PASS: Review stars should be 1..5 (index 3, actual=5)
+2025-12-28 02:57:02 INFO  STEP PASS: Review text should not be blank (index 3)
+2025-12-28 02:57:02 INFO  STEP PASS: Review dateText should not be null (index 3)
+2025-12-28 02:57:02 INFO  STEP: Toggle Reviews again to return to initial state
+2025-12-28 02:57:02 INFO  STEP: Wait until reviews open state returns to initial
+2025-12-28 02:57:02 INFO  STEP: After second toggle: reviewsOpen=false
+2025-12-28 02:57:02 INFO  STEP PASS: Reviews state should toggle back after second click
+2025-12-28 02:57:02 INFO  === PASS  tests.ReviewsToggleTests.exp1_reviewsToggle_shouldToggleAndShowReviews ===
+2025-12-28 02:57:02 INFO  === END   tests.ReviewsToggleTests.exp1_reviewsToggle_shouldToggleAndShowReviews ===
+2025-12-28 03:09:08 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[0 - Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]] ===
+2025-12-28 03:09:11 INFO  STEP: Navigate to results using Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]
+2025-12-28 03:09:18 INFO  STEP: Verify results grid is visible
+2025-12-28 03:09:18 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:09:18 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:09:18 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:09:19 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[0 - Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]] ===
+2025-12-28 03:09:19 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[0 - Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]] ===
+2025-12-28 03:09:19 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[1 - Exp#2 [f1=1, f2=1, f3=2, f4=2, f5=2, f6=2, f7=2, f8=2]] ===
+2025-12-28 03:09:20 INFO  STEP: Navigate to results using Exp#2 [f1=1, f2=1, f3=2, f4=2, f5=2, f6=2, f7=2, f8=2]
+2025-12-28 03:09:26 INFO  STEP: Verify results grid is visible
+2025-12-28 03:09:26 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:09:26 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:09:26 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:09:27 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[1 - Exp#2 [f1=1, f2=1, f3=2, f4=2, f5=2, f6=2, f7=2, f8=2]] ===
+2025-12-28 03:09:27 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[1 - Exp#2 [f1=1, f2=1, f3=2, f4=2, f5=2, f6=2, f7=2, f8=2]] ===
+2025-12-28 03:09:27 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[2 - Exp#3 [f1=1, f2=1, f3=3, f4=3, f5=3, f6=3, f7=3, f8=3]] ===
+2025-12-28 03:09:28 INFO  STEP: Navigate to results using Exp#3 [f1=1, f2=1, f3=3, f4=3, f5=3, f6=3, f7=3, f8=3]
+2025-12-28 03:09:33 INFO  STEP: Verify results grid is visible
+2025-12-28 03:09:33 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:09:33 INFO  STEP: Verify cards count (actual=4)
+2025-12-28 03:09:33 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:09:34 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[2 - Exp#3 [f1=1, f2=1, f3=3, f4=3, f5=3, f6=3, f7=3, f8=3]] ===
+2025-12-28 03:09:34 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[2 - Exp#3 [f1=1, f2=1, f3=3, f4=3, f5=3, f6=3, f7=3, f8=3]] ===
+2025-12-28 03:09:34 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[3 - Exp#4 [f1=1, f2=2, f3=1, f4=1, f5=2, f6=2, f7=3, f8=3]] ===
+2025-12-28 03:09:35 INFO  STEP: Navigate to results using Exp#4 [f1=1, f2=2, f3=1, f4=1, f5=2, f6=2, f7=3, f8=3]
+2025-12-28 03:09:39 INFO  STEP: Verify results grid is visible
+2025-12-28 03:09:39 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:09:39 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:09:39 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:09:40 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[3 - Exp#4 [f1=1, f2=2, f3=1, f4=1, f5=2, f6=2, f7=3, f8=3]] ===
+2025-12-28 03:09:40 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[3 - Exp#4 [f1=1, f2=2, f3=1, f4=1, f5=2, f6=2, f7=3, f8=3]] ===
+2025-12-28 03:09:40 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[4 - Exp#5 [f1=1, f2=2, f3=2, f4=2, f5=3, f6=3, f7=1, f8=1]] ===
+2025-12-28 03:09:41 INFO  STEP: Navigate to results using Exp#5 [f1=1, f2=2, f3=2, f4=2, f5=3, f6=3, f7=1, f8=1]
+2025-12-28 03:09:45 INFO  STEP: Verify results grid is visible
+2025-12-28 03:09:45 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:09:45 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:09:45 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:09:45 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[4 - Exp#5 [f1=1, f2=2, f3=2, f4=2, f5=3, f6=3, f7=1, f8=1]] ===
+2025-12-28 03:09:45 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[4 - Exp#5 [f1=1, f2=2, f3=2, f4=2, f5=3, f6=3, f7=1, f8=1]] ===
+2025-12-28 03:09:45 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[5 - Exp#6 [f1=1, f2=2, f3=3, f4=3, f5=1, f6=1, f7=2, f8=2]] ===
+2025-12-28 03:09:46 INFO  STEP: Navigate to results using Exp#6 [f1=1, f2=2, f3=3, f4=3, f5=1, f6=1, f7=2, f8=2]
+2025-12-28 03:09:51 INFO  STEP: Verify results grid is visible
+2025-12-28 03:09:51 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:09:51 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:09:51 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:09:51 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[5 - Exp#6 [f1=1, f2=2, f3=3, f4=3, f5=1, f6=1, f7=2, f8=2]] ===
+2025-12-28 03:09:51 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[5 - Exp#6 [f1=1, f2=2, f3=3, f4=3, f5=1, f6=1, f7=2, f8=2]] ===
+2025-12-28 03:09:51 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[6 - Exp#7 [f1=1, f2=3, f3=1, f4=2, f5=1, f6=3, f7=2, f8=3]] ===
+2025-12-28 03:09:52 INFO  STEP: Navigate to results using Exp#7 [f1=1, f2=3, f3=1, f4=2, f5=1, f6=3, f7=2, f8=3]
+2025-12-28 03:09:57 INFO  STEP: Verify results grid is visible
+2025-12-28 03:09:57 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:09:57 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:09:57 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:09:57 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[6 - Exp#7 [f1=1, f2=3, f3=1, f4=2, f5=1, f6=3, f7=2, f8=3]] ===
+2025-12-28 03:09:57 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[6 - Exp#7 [f1=1, f2=3, f3=1, f4=2, f5=1, f6=3, f7=2, f8=3]] ===
+2025-12-28 03:09:57 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[7 - Exp#8 [f1=1, f2=3, f3=2, f4=3, f5=2, f6=1, f7=3, f8=1]] ===
+2025-12-28 03:09:58 INFO  STEP: Navigate to results using Exp#8 [f1=1, f2=3, f3=2, f4=3, f5=2, f6=1, f7=3, f8=1]
+2025-12-28 03:10:03 INFO  STEP: Verify results grid is visible
+2025-12-28 03:10:03 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:10:03 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:10:03 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:10:03 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[7 - Exp#8 [f1=1, f2=3, f3=2, f4=3, f5=2, f6=1, f7=3, f8=1]] ===
+2025-12-28 03:10:03 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[7 - Exp#8 [f1=1, f2=3, f3=2, f4=3, f5=2, f6=1, f7=3, f8=1]] ===
+2025-12-28 03:10:03 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[8 - Exp#9 [f1=1, f2=3, f3=3, f4=1, f5=3, f6=2, f7=1, f8=2]] ===
+2025-12-28 03:10:04 INFO  STEP: Navigate to results using Exp#9 [f1=1, f2=3, f3=3, f4=1, f5=3, f6=2, f7=1, f8=2]
+2025-12-28 03:10:09 INFO  STEP: Verify results grid is visible
+2025-12-28 03:10:09 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:10:09 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:10:09 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:10:09 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[8 - Exp#9 [f1=1, f2=3, f3=3, f4=1, f5=3, f6=2, f7=1, f8=2]] ===
+2025-12-28 03:10:09 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[8 - Exp#9 [f1=1, f2=3, f3=3, f4=1, f5=3, f6=2, f7=1, f8=2]] ===
+2025-12-28 03:10:09 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[9 - Exp#10 [f1=2, f2=1, f3=1, f4=3, f5=3, f6=2, f7=2, f8=1]] ===
+2025-12-28 03:10:10 INFO  STEP: Navigate to results using Exp#10 [f1=2, f2=1, f3=1, f4=3, f5=3, f6=2, f7=2, f8=1]
+2025-12-28 03:10:15 INFO  STEP: Verify results grid is visible
+2025-12-28 03:10:15 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:10:15 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:10:15 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:10:15 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[9 - Exp#10 [f1=2, f2=1, f3=1, f4=3, f5=3, f6=2, f7=2, f8=1]] ===
+2025-12-28 03:10:15 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[9 - Exp#10 [f1=2, f2=1, f3=1, f4=3, f5=3, f6=2, f7=2, f8=1]] ===
+2025-12-28 03:10:15 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[10 - Exp#11 [f1=2, f2=1, f3=2, f4=1, f5=1, f6=3, f7=3, f8=2]] ===
+2025-12-28 03:10:16 INFO  STEP: Navigate to results using Exp#11 [f1=2, f2=1, f3=2, f4=1, f5=1, f6=3, f7=3, f8=2]
+2025-12-28 03:10:21 INFO  STEP: Verify results grid is visible
+2025-12-28 03:10:21 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:10:21 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:10:21 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:10:21 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[10 - Exp#11 [f1=2, f2=1, f3=2, f4=1, f5=1, f6=3, f7=3, f8=2]] ===
+2025-12-28 03:10:21 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[10 - Exp#11 [f1=2, f2=1, f3=2, f4=1, f5=1, f6=3, f7=3, f8=2]] ===
+2025-12-28 03:10:21 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[11 - Exp#12 [f1=2, f2=1, f3=3, f4=2, f5=2, f6=1, f7=1, f8=3]] ===
+2025-12-28 03:10:22 INFO  STEP: Navigate to results using Exp#12 [f1=2, f2=1, f3=3, f4=2, f5=2, f6=1, f7=1, f8=3]
+2025-12-28 03:10:29 INFO  STEP: Verify results grid is visible
+2025-12-28 03:10:29 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:10:29 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:10:29 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:10:29 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[11 - Exp#12 [f1=2, f2=1, f3=3, f4=2, f5=2, f6=1, f7=1, f8=3]] ===
+2025-12-28 03:10:29 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[11 - Exp#12 [f1=2, f2=1, f3=3, f4=2, f5=2, f6=1, f7=1, f8=3]] ===
+2025-12-28 03:10:29 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[12 - Exp#13 [f1=2, f2=2, f3=1, f4=2, f5=3, f6=1, f7=3, f8=2]] ===
+2025-12-28 03:10:30 INFO  STEP: Navigate to results using Exp#13 [f1=2, f2=2, f3=1, f4=2, f5=3, f6=1, f7=3, f8=2]
+2025-12-28 03:10:36 INFO  STEP: Verify results grid is visible
+2025-12-28 03:10:36 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:10:36 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:10:36 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:10:36 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[12 - Exp#13 [f1=2, f2=2, f3=1, f4=2, f5=3, f6=1, f7=3, f8=2]] ===
+2025-12-28 03:10:36 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[12 - Exp#13 [f1=2, f2=2, f3=1, f4=2, f5=3, f6=1, f7=3, f8=2]] ===
+2025-12-28 03:10:36 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[13 - Exp#14 [f1=2, f2=2, f3=2, f4=3, f5=1, f6=2, f7=1, f8=3]] ===
+2025-12-28 03:10:37 INFO  STEP: Navigate to results using Exp#14 [f1=2, f2=2, f3=2, f4=3, f5=1, f6=2, f7=1, f8=3]
+2025-12-28 03:10:43 INFO  STEP: Verify results grid is visible
+2025-12-28 03:10:43 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:10:43 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:10:43 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:10:43 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[13 - Exp#14 [f1=2, f2=2, f3=2, f4=3, f5=1, f6=2, f7=1, f8=3]] ===
+2025-12-28 03:10:43 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[13 - Exp#14 [f1=2, f2=2, f3=2, f4=3, f5=1, f6=2, f7=1, f8=3]] ===
+2025-12-28 03:10:43 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[14 - Exp#15 [f1=2, f2=2, f3=3, f4=1, f5=2, f6=3, f7=2, f8=1]] ===
+2025-12-28 03:10:44 INFO  STEP: Navigate to results using Exp#15 [f1=2, f2=2, f3=3, f4=1, f5=2, f6=3, f7=2, f8=1]
+2025-12-28 03:10:50 INFO  STEP: Verify results grid is visible
+2025-12-28 03:10:50 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:10:50 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:10:50 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:10:50 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[14 - Exp#15 [f1=2, f2=2, f3=3, f4=1, f5=2, f6=3, f7=2, f8=1]] ===
+2025-12-28 03:10:50 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[14 - Exp#15 [f1=2, f2=2, f3=3, f4=1, f5=2, f6=3, f7=2, f8=1]] ===
+2025-12-28 03:10:50 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[15 - Exp#16 [f1=2, f2=3, f3=1, f4=3, f5=2, f6=3, f7=1, f8=2]] ===
+2025-12-28 03:10:51 INFO  STEP: Navigate to results using Exp#16 [f1=2, f2=3, f3=1, f4=3, f5=2, f6=3, f7=1, f8=2]
+2025-12-28 03:10:56 INFO  STEP: Verify results grid is visible
+2025-12-28 03:10:56 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:10:56 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:10:56 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:10:56 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[15 - Exp#16 [f1=2, f2=3, f3=1, f4=3, f5=2, f6=3, f7=1, f8=2]] ===
+2025-12-28 03:10:56 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[15 - Exp#16 [f1=2, f2=3, f3=1, f4=3, f5=2, f6=3, f7=1, f8=2]] ===
+2025-12-28 03:10:56 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[16 - Exp#17 [f1=2, f2=3, f3=2, f4=1, f5=3, f6=1, f7=2, f8=3]] ===
+2025-12-28 03:10:57 INFO  STEP: Navigate to results using Exp#17 [f1=2, f2=3, f3=2, f4=1, f5=3, f6=1, f7=2, f8=3]
+2025-12-28 03:11:02 INFO  STEP: Verify results grid is visible
+2025-12-28 03:11:02 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:11:02 INFO  STEP: Verify cards count (actual=4)
+2025-12-28 03:11:02 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:11:02 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[16 - Exp#17 [f1=2, f2=3, f3=2, f4=1, f5=3, f6=1, f7=2, f8=3]] ===
+2025-12-28 03:11:02 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[16 - Exp#17 [f1=2, f2=3, f3=2, f4=1, f5=3, f6=1, f7=2, f8=3]] ===
+2025-12-28 03:11:02 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[17 - Exp#18 [f1=2, f2=3, f3=3, f4=2, f5=1, f6=2, f7=3, f8=1]] ===
+2025-12-28 03:11:03 INFO  STEP: Navigate to results using Exp#18 [f1=2, f2=3, f3=3, f4=2, f5=1, f6=2, f7=3, f8=1]
+2025-12-28 03:11:08 INFO  STEP: Verify results grid is visible
+2025-12-28 03:11:08 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:11:08 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:11:08 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:11:08 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[17 - Exp#18 [f1=2, f2=3, f3=3, f4=2, f5=1, f6=2, f7=3, f8=1]] ===
+2025-12-28 03:11:08 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[17 - Exp#18 [f1=2, f2=3, f3=3, f4=2, f5=1, f6=2, f7=3, f8=1]] ===
+2025-12-28 03:13:05 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]] ===
+2025-12-28 03:13:07 INFO  STEP: Navigate to results using Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]
+2025-12-28 03:13:16 INFO  STEP: Verify results grid is visible
+2025-12-28 03:13:16 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:13:16 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:13:16 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:13:16 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]] ===
+2025-12-28 03:13:16 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]] ===
+2025-12-28 03:13:16 INFO  === START tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[Exp#2 [f1=1, f2=1, f3=2, f4=2, f5=2, f6=2, f7=2, f8=2]] ===
+2025-12-28 03:13:17 INFO  STEP: Navigate to results using Exp#2 [f1=1, f2=1, f3=2, f4=2, f5=2, f6=2, f7=2, f8=2]
+2025-12-28 03:13:23 INFO  STEP: Verify results grid is visible
+2025-12-28 03:13:23 INFO  STEP PASS: Results grid should be visible
+2025-12-28 03:13:23 INFO  STEP: Verify cards count (actual=5)
+2025-12-28 03:13:23 INFO  STEP PASS: Expected at least 1 product card
+2025-12-28 03:13:23 INFO  === PASS  tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[Exp#2 [f1=1, f2=1, f3=2, f4=2, f5=2, f6=2, f7=2, f8=2]] ===
+2025-12-28 03:13:23 INFO  === END   tests.SmokeTests.openFillSubmit_shouldShowResultsAndCards[Exp#2 [f1=1, f2=1, f3=2, f4=2, f5=2, f6=2, f7=2, f8=2]] ===
+2025-12-28 03:16:27 INFO  === START tests.ReviewsToggleTests.reviewsToggle_shouldToggleAndShowReviews[Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]] ===
+2025-12-28 03:16:30 INFO  STEP: Navigate to results using Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]
+2025-12-28 03:16:38 INFO  STEP: Open first product card
+2025-12-28 03:16:38 INFO  STEP: Initial state: reviewsOpen=false, reviews=0
+2025-12-28 03:16:38 INFO  STEP: Toggle Reviews
+2025-12-28 03:16:39 INFO  STEP: Wait until reviews open state toggles
+2025-12-28 03:16:39 INFO  STEP: After toggle: reviewsOpen=true
+2025-12-28 03:16:39 INFO  STEP PASS: Reviews state should toggle after click
+2025-12-28 03:16:39 INFO  STEP: Verify reviews exist when Reviews is open
+2025-12-28 03:16:39 INFO  STEP: Reviews count after open: 4
+2025-12-28 03:16:39 INFO  STEP PASS: Expected at least 1 review when reviews are open
+2025-12-28 03:16:39 INFO  STEP PASS: Review author should not be blank (index 0)
+2025-12-28 03:16:39 INFO  STEP PASS: Review stars should be 1..5 (index 0, actual=5)
+2025-12-28 03:16:39 INFO  STEP PASS: Review text should not be blank (index 0)
+2025-12-28 03:16:39 INFO  STEP PASS: Review dateText should not be null (index 0)
+2025-12-28 03:16:39 INFO  STEP PASS: Review author should not be blank (index 1)
+2025-12-28 03:16:39 INFO  STEP PASS: Review stars should be 1..5 (index 1, actual=3)
+2025-12-28 03:16:39 INFO  STEP PASS: Review text should not be blank (index 1)
+2025-12-28 03:16:39 INFO  STEP PASS: Review dateText should not be null (index 1)
+2025-12-28 03:16:39 INFO  STEP PASS: Review author should not be blank (index 2)
+2025-12-28 03:16:39 INFO  STEP PASS: Review stars should be 1..5 (index 2, actual=3)
+2025-12-28 03:16:39 INFO  STEP PASS: Review text should not be blank (index 2)
+2025-12-28 03:16:39 INFO  STEP PASS: Review dateText should not be null (index 2)
+2025-12-28 03:16:39 INFO  STEP PASS: Review author should not be blank (index 3)
+2025-12-28 03:16:39 INFO  STEP PASS: Review stars should be 1..5 (index 3, actual=5)
+2025-12-28 03:16:39 INFO  STEP PASS: Review text should not be blank (index 3)
+2025-12-28 03:16:39 INFO  STEP PASS: Review dateText should not be null (index 3)
+2025-12-28 03:16:39 INFO  STEP: Toggle Reviews again to return to initial state
+2025-12-28 03:16:39 INFO  STEP: Wait until reviews open state returns to initial
+2025-12-28 03:16:39 INFO  STEP: After second toggle: reviewsOpen=false
+2025-12-28 03:16:39 INFO  STEP PASS: Reviews state should toggle back after second click
+2025-12-28 03:16:40 INFO  === PASS  tests.ReviewsToggleTests.reviewsToggle_shouldToggleAndShowReviews[Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]] ===
+2025-12-28 03:16:40 INFO  === END   tests.ReviewsToggleTests.reviewsToggle_shouldToggleAndShowReviews[Exp#1 [f1=1, f2=1, f3=1, f4=1, f5=1, f6=1, f7=1, f8=1]] ===
+2025-12-28 03:16:40 INFO  === START tests.ReviewsToggleTests.reviewsToggle_shouldToggleAndShowReviews[Exp#2 [f1=1, f2=1, f3=2, f4=2, f5=2, f6=2, f7=2, f8=2]] ===
+2025-12-28 03:16:41 INFO  STEP: Navigate to results using Exp#2 [f1=1, f2=1, f3=2, f4=2, f5=2, f6=2, f7=2, f8=2]
+2025-12-28 03:16:48 INFO  STEP: Open first product card
+2025-12-28 03:16:48 INFO  STEP: Initial state: reviewsOpen=false, reviews=0
+2025-12-28 03:16:48 INFO  STEP: Toggle Reviews
+2025-12-28 03:16:48 INFO  STEP: Wait until reviews open state toggles
+2025-12-28 03:16:48 INFO  STEP: After toggle: reviewsOpen=true
+2025-12-28 03:16:48 INFO  STEP PASS: Reviews state should toggle after click
+2025-12-28 03:16:48 INFO  STEP: Verify reviews exist when Reviews is open
+2025-12-28 03:16:48 INFO  STEP: Reviews count after open: 4
+2025-12-28 03:16:48 INFO  STEP PASS: Expected at least 1 review when reviews are open
+2025-12-28 03:16:48 INFO  STEP PASS: Review author should not be blank (index 0)
+2025-12-28 03:16:48 INFO  STEP PASS: Review stars should be 1..5 (index 0, actual=5)
+2025-12-28 03:16:48 INFO  STEP PASS: Review text should not be blank (index 0)
+2025-12-28 03:16:48 INFO  STEP PASS: Review dateText should not be null (index 0)
+2025-12-28 03:16:48 INFO  STEP PASS: Review author should not be blank (index 1)
+2025-12-28 03:16:48 INFO  STEP PASS: Review stars should be 1..5 (index 1, actual=3)
+2025-12-28 03:16:48 INFO  STEP PASS: Review text should not be blank (index 1)
+2025-12-28 03:16:48 INFO  STEP PASS: Review dateText should not be null (index 1)
+2025-12-28 03:16:48 INFO  STEP PASS: Review author should not be blank (index 2)
+2025-12-28 03:16:48 INFO  STEP PASS: Review stars should be 1..5 (index 2, actual=5)
+2025-12-28 03:16:48 INFO  STEP PASS: Review text should not be blank (index 2)
+2025-12-28 03:16:48 INFO  STEP PASS: Review dateText should not be null (index 2)
+2025-12-28 03:16:48 INFO  STEP PASS: Review author should not be blank (index 3)
+2025-12-28 03:16:48 INFO  STEP PASS: Review stars should be 1..5 (index 3, actual=1)
+2025-12-28 03:16:48 INFO  STEP PASS: Review text should not be blank (index 3)
+2025-12-28 03:16:48 INFO  STEP PASS: Review dateText should not be null (index 3)
+2025-12-28 03:16:48 INFO  STEP: Toggle Reviews again to return to initial state
+2025-12-28 03:16:48 INFO  STEP: Wait until reviews open state returns to initial
+2025-12-28 03:16:48 INFO  STEP: After second toggle: reviewsOpen=false
+2025-12-28 03:16:48 INFO  STEP PASS: Reviews state should toggle back after second click
+2025-12-28 03:16:48 INFO  === PASS  tests.ReviewsToggleTests.reviewsToggle_shouldToggleAndShowReviews[Exp#2 [f1=1, f2=1, f3=2, f4=2, f5=2, f6=2, f7=2, f8=2]] ===
+2025-12-28 03:16:48 INFO  === END   tests.ReviewsToggleTests.reviewsToggle_shouldToggleAndShowReviews[Exp#2 [f1=1, f2=1, f3=2, f4=2, f5=2, f6=2, f7=2, f8=2]] ===
