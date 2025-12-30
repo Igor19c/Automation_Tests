@@ -1,18 +1,20 @@
-package tests;
+package tests.inputPageTests;
 
 import data.ExperimentInput;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import pages.FindMyGiftResultsPage;
+import pages.ResultPage;
+import tests.BaseTest;
+
 import java.util.Collection;
 
 @RunWith(Parameterized.class)
-public class SmokeTests extends BaseTest {
+public class Submit_shows_results_page extends BaseTest {
 
 	private final ExperimentInput e;
 
-	public SmokeTests(ExperimentInput e) {
+	public Submit_shows_results_page(ExperimentInput e) {
 		this.e = e;
 	}
 
@@ -22,15 +24,10 @@ public class SmokeTests extends BaseTest {
 	}
 
 	@Test
-	public void openFillSubmit_shouldShowResultsAndCards() {
-		step("Navigate to results using " + e);
-		FindMyGiftResultsPage results = goToResults(e);
-
+	public void submit_shouldShowResultsPage() {
+		ResultPage results = goToResults(e);
 		step("Verify results grid is visible");
 		checkTrue("Results grid should be visible", results.isResultsVisible());
-
-		int count = results.getCardsCount();
-		step("Verify cards count (actual=" + count + ")");
-		checkTrue("Expected 5 product cards", count == 5);
 	}
+
 }

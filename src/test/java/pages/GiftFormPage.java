@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.List;
 
 public class GiftFormPage {
@@ -33,14 +34,12 @@ public class GiftFormPage {
 		return this;
 	}
 
-	/** חשוב: לחכות שהטופס באמת מופיע */
 	public GiftFormPage waitUntilLoaded() {
 		try {
 			wait.until(ExpectedConditions.presenceOfElementLocated(f1));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(f1));
 			return this;
 		} catch (TimeoutException e) {
-			// דיבאג קריטי: נדע איפה אנחנו באמת ומה הכותרת
 			throw new AssertionError("GiftFormPage did not load. Current URL: " + driver.getCurrentUrl() + " | Title: "
 					+ driver.getTitle(), e);
 		}
@@ -74,7 +73,50 @@ public class GiftFormPage {
 		return this;
 	}
 
+	public void fill_1(int f1v) {
+		selectLevel(f1, f1v);
+	}
+
+	public void fill_2(int f2v) {
+		selectLevel(f2, f2v);
+	}
+
+	public void fill_3(int f3v) {
+		selectLevel(f3, f3v);
+	}
+
+	public void fill_4(int f4v) {
+		selectLevel(f4, f4v);
+	}
+
+	public void fill_5(int f5v) {
+		selectLevel(f5, f5v);
+	}
+
+	public void fill_6(int f6v) {
+		selectLevel(f6, f6v);
+	}
+
+	public void fill_7(int f7v) {
+		selectLevel(f7, f7v);
+	}
+
+	public void fill_8(int f8v) {
+		selectLevel(f8, f8v);
+	}
+
+
 	public void submit() {
 		wait.until(ExpectedConditions.elementToBeClickable(submitBtn)).click();
 	}
+	
+	private WebElement getDropdownElement(By by) {
+		return driver.findElement(by);
+	}
+	public List<WebElement> getAllFields() {
+	    return Arrays.asList(getDropdownElement(f1), getDropdownElement(f2), getDropdownElement(f3)
+	    		, getDropdownElement(f4), getDropdownElement(f5), getDropdownElement(f6), 
+	    		getDropdownElement(f7), getDropdownElement(f8));
+	}
+
 }

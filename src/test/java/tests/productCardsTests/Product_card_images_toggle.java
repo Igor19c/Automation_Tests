@@ -1,20 +1,22 @@
-package tests;
+package tests.productCardsTests;
 
 import data.ExperimentInput;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import pages.FindMyGiftResultsPage;
-import pages.ProductCardComponent;
+import pages.ResultPage;
+import pages.ProductCard;
+import tests.BaseTest;
+
 import java.util.Collection;
 import java.util.List;
 
 @RunWith(Parameterized.class)
-public class ImagesToggleTests extends BaseTest {
+public class Product_card_images_toggle extends BaseTest {
 
 	private final ExperimentInput e;
 
-	public ImagesToggleTests(ExperimentInput e) {
+	public Product_card_images_toggle(ExperimentInput e) {
 		this.e = e;
 	}
 
@@ -24,18 +26,16 @@ public class ImagesToggleTests extends BaseTest {
 	}
 
 	@Test
-	public void imagesToggle_shouldToggleAndShowAdditionalImages() {
+	public void imagesToggle_shouldToggleAnd1ShowAdditionalImages() {
 
-		// step("Navigate to results using " + e);
-		FindMyGiftResultsPage results = goToResults(e);
+		ResultPage results = goToResults(e);
 
 		int count = results.getCardsCount();
-//		checkTrue("Expected 5 product cards", count == 5);
 
 		for (int i = 0; i < count; i++) {
 			step("=== CARD " + (i + 1) + " ===");
 
-			ProductCardComponent card = results.getCard(i);
+			ProductCard card = results.getCard(i);
 			card.waitUntilReady();
 
 			boolean initiallyOpen = card.isImagesOpen();
@@ -45,7 +45,6 @@ public class ImagesToggleTests extends BaseTest {
 			step("Toggle Images");
 			card.toggleImages();
 
-			// step("Wait until images open state toggles");
 			wait.until(d -> card.isImagesOpen() != initiallyOpen);
 
 			boolean afterFirstToggle = card.isImagesOpen();
@@ -58,16 +57,9 @@ public class ImagesToggleTests extends BaseTest {
 			checkTrue("Card " + (i + 1) + ": Expected at least 1 additional image when images are open",
 					urls.size() >= 1);
 
-//			for (int k = 0; k < urls.size(); k++) {
-//				String u = urls.get(k);
-//				checkTrue("Card " + i + ": Additional image src should not be blank (index " + k + ")",
-//						u != null && !u.trim().isEmpty());
-//			}
-
 			step("Toggle Images again to return to initial state");
 			card.toggleImages();
 
-			// step("Wait until images open state returns to initial");
 			wait.until(d -> card.isImagesOpen() == initiallyOpen);
 
 			checkTrue("Card " + (i + 1) + ": Images state should toggle back after second click",
